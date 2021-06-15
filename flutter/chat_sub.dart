@@ -1,14 +1,6 @@
-import 'package:ably_flutter/ably_flutter.dart' as ably;
+channel
+  .presence
+  .subscribe(action: PresenceAction.enter)
+  .listen((member) => ui.showMemberEntered(member));
 
-void main() async {
-  final realtime = ably.Realtime(key: 'ABLY_API_KEY');
-  final channel = realtime.channels.get('room:tesla-fans');
-
-  channel.presence.subscribe().listen((presenceMessage) {
-    print(presenceMessage);
-  });
-
-  channel.subscribe().listen((message) {
-    print(message);
-  });
-}
+channel.subscribe().listen((message) => appendToConversation(message.data));
