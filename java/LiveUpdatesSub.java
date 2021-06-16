@@ -1,6 +1,3 @@
-AblyRealtime ably = new AblyRealtime("ABLY_API_KEY");
-
-
 Channel channel = ably.channels.get("dogecoin:usd");
 channel.subscribe(new Channel.MessageListener() {
     @Override
