@@ -1,4 +1,2 @@
-AblyRealtime ably = new AblyRealtime("ABLY_API_KEY");
-
 Channel channel = ably.channels.get("driver:elon");
-channel.publish("position", "{ \"lat\": 10.1233, \"long\": 12.22 }");
+channel.publish("position", "{ \"lat\": 10.1233, \"long\": 12.22, \"bearing\": \"nw\" " }");
