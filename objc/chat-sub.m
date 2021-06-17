@@ -1,7 +1,8 @@
 channel = [ably.channels get:@"room:tesla-fans"];
+__weak typeof(self) weakSelf = self;
 [channel.presence subscribe:ARTPresenceEnter callback:^(ARTPresenceMessage *message) {
-    [self showMemberEntered:[message clientId]];
+    [weakSelf showMemberEntered:[message clientId]];
 }];
 [channel subscribe:^(ARTMessage *message) {
-    [self appendToConversation:[message data]]; // [message data] is NSDictionary
+    [weakSelf appendToConversation:[message data]]; // [message data] is NSDictionary
 }];
