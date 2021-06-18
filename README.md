@@ -6,6 +6,7 @@ This repository contains snippets for the ably.com homepage as required by [SDK-
 
 To add a new set of snippets create a top level directory in this repository named after the language the snippets are for and add the snippets in that directory.
 
+Please use the [JavaScript snippets](/javascript) as a reference for other languages.
 
 Regarding the max practical width in the design, this is the guideline
 
