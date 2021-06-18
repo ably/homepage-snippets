@@ -8,23 +8,6 @@ To add a new set of snippets create a top level directory in this repository nam
 
 Please use the [JavaScript snippets](/javascript) as a reference for other languages.
 
-Regarding the max practical width in the design, this is the guideline
+The recommended maximum length for each line of code in a snippet is 60 characters to fit nicely within the homepage design, but the absolute maximum length is 64 characters to avoid wrapping to the next line.
 
-- the absolute max-width before the code will wrap is 64 characters
-- the recommended length is 60 characters
-- ATM the vertical line count is 5, before a scrollbar appears (subject to change)
-
-for this example .... extract the Ojbect literal
-
-**from**
-```
-final channel = ably.channels.get('doc:mars-launch-plan');
-await channel.publish('update', {'pos': chatAt, 'insert': 'Send Grimes first'});
-```
-**to**
-
-```
-final channel = ably.channels.get('doc:mars-launch-plan');
-const options = {'pos': chatAt, 'insert': 'Send Grimes first'};
-await channel.publish('update', options);
-```
+The recommended maximum number of lines in a snippet is 5 to avoid a scrollbar appearing, but this is subject to change.
