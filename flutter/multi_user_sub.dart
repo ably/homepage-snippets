@@ -1,3 +1,3 @@
-channel.subscribe(name: 'update').listen((message) {
-  document.applyUpdate(message.data);
-});
+channel
+  .subscribe(name: 'update')
+  .listen((message) => document.applyUpdate(message.data));
