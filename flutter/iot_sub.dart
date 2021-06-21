@@ -1,7 +1,10 @@
-mqttClient.subscribe("device:rocket:1", MqttQos.exactlyOnce);
+mqttClient.subscribe(
+  "device:rocket:1",
+  MqttQos.exactlyOnce,
+);
 mqttClient.updates.listen((message) {
-  final message = messages[0];
-  if(message.topic == 'action') {
-    rocket.processInstruction(json.decode(message.payload));
+  final msg = messages[0];
+  if(msg.topic == 'action') {
+    rocket.processInstruction(json.decode(msg.payload));
   }
 });
