@@ -1,2 +1,3 @@
 channel = ably.channels.get('doc:mars-launch-plan')
-channel.publish('update', { pos: editor.current_position, insert: 'Send Grimes first' })
+msg = { pos: char_at, insert: 'Send Grimes first' }
+channel.publish('update', msg)

@@ -1,6 +1,6 @@
-channel = ably.channels.get('device:rocket:1')
-channel.subscribe do |payload|
+mqtt = ably.channels.get('device:rocket:1')
+mqtt.subscribe('message') do |payload|
   if payload.name == 'action'
-    mqtt.publish(payload.name, payload.data)
+    rocket.process_instruction(payload.name, payload.data)
   end
 end
