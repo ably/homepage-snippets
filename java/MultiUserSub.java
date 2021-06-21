@@ -1,3 +1,7 @@
-channel.subscribe("update", (Channel.MessageListener) msg ->
-    System.out.println("Message received: " + msg.data)
-);
+Channel channel = ably.channels.get("doc:mars-launch-plan");
+channel.subscribe(new Channel.MessageListener() {
+    @Override
+    public void onMessage(Message message) {
+        document.applyUpdate(message.data);
+    }
+});
