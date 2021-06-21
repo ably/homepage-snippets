@@ -1,7 +1,20 @@
-channel.presence.subscribe(PresenceMessage.Action.enter, member -> 
-	System.out.println(member.toString())
-);
+Channel channel = ably.channels.get("room:tesla-fans");
 
-channel.subscribe((Channel.MessageListener) msg -> 
-	System.out.println("Message received: " + msg.data)
-);
+channel.presence.subscribe(new Presence.PresenceListener() {
+    @Override
+    public void onPresenceMessage(PresenceMessage message) {
+        if (message.action == Action.enter) {
+            ui.showMemberEntered(message);
+        }
+        if (message.action == Action.leave) {
+            ui.showMemberLeft(message);
+        }
+    }
+});
+
+channel.subscribe(new Channel.MessageListener() {
+    @Override
+    public void onMessage(Message message) {
+        ui.appendToConversation(message.data)
+    }
+});
