@@ -1,3 +1,5 @@
 Channel channel = ably.channels.get("doc:mars-launch-plan");
-String msg = "{ \"pos\": 42, \"insert\": \"Send Grimes first\" }";
-channel.publish("update", msg);
+Map payload = new HashMap<String, Object>();
+payload.put("pos", charAt);
+payload.put("insert", "Send Grimes first");
+channel.publish("update", payload);
