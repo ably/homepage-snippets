@@ -1,2 +1,3 @@
 Channel channel = ably.channels.get("doc:mars-launch-plan");
-channel.publish("update", "{ \"pos\": 42, \"insert\": \"Send Grimes first\" }");
+String msg = "{ \"pos\": 42, \"insert\": \"Send Grimes first\" }";
+channel.publish("update", msg);
