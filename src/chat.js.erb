@@ -1,0 +1,101 @@
+const id = 'chat';
+const name = 'Chat';
+const screenshot = 'chat.png';
+const github = 'https://github.com/ably-labs/NextJS-chat-app';
+const text = 'See demo at Ably Labs';
+
+const publish = [
+  {
+    lang: 'javascript',
+    name: 'JavaScript',
+    code: `<%= File.read('javascript/chat-pub.js') %>`,
+  },
+  {
+    lang: 'android',
+    name: 'Android',
+    code: `<%= File.read('android/ChatPub.java') %>`,
+  },
+  {
+    lang: 'obj-c',
+    name: 'Obj-C',
+    code: `<%= File.read('objc/chat-pub.m') %>`,
+  },
+  {
+    lang: 'swift',
+    name: 'Swift',
+    code: `<%= File.read('javascript/chat-pub.js') %>`,
+  },
+  {
+    lang: 'net',
+    name: '.NET',
+    code: `<%= File.read('javascript/chat-pub.js') %>`,
+  },
+  {
+    lang: 'ruby',
+    name: 'Ruby',
+    code: `<%= File.read('ruby/chat_pub.rb') %>`,
+  },
+  {
+    lang: 'go',
+    name: 'Go',
+    code: `<%= File.read('go/chat_pub.go') %>`,
+  },
+  {
+    lang: 'python',
+    name: 'Python',
+    code: `<%= File.read('javascript/chat-pub.js') %>`,
+  },
+  {
+    lang: 'php',
+    name: 'Laravel',
+    code: `<%= File.read('javascript/chat-pub.js') %>`,
+  },
+];
+
+const subscribe = [
+  {
+    lang: 'javascript',
+    name: 'JavaScript',
+    code: `<%= File.read('javascript/chat-sub.js') %>`,
+  },
+  {
+    lang: 'android',
+    name: 'Android',
+    code: `<%= File.read('android/ChatSub.kt') %>`,
+  },
+  {
+    lang: 'java',
+    name: 'Java',
+    code: `<%= File.read('java/ChatSub.java') %>`,
+  },
+  {
+    lang: 'obj-c',
+    name: 'Obj-C',
+    code: `<%= File.read('objc/chat-sub.m') %>`,
+  },
+  {
+    lang: 'swift',
+    name: 'Swift',
+    code: `<%= File.read('javascript/chat-sub.js') %>`,
+  },
+  {
+    lang: 'net',
+    name: '.NET',
+    code: `<%= File.read('javascript/chat-sub.js') %>`,
+  },
+  {
+    lang: 'flutter',
+    name: 'Flutter',
+    code: `<%= File.read('flutter/chat_sub.dart') %>`,
+  },
+];
+
+const component = {
+  id,
+  name,
+  text,
+  github,
+  screenshot,
+  data: { publish, subscribe },
+};
+export default component;

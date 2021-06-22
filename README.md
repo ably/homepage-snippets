@@ -11,3 +11,13 @@ Please use the [JavaScript snippets](/javascript) as a reference for other langu
 The recommended maximum length for each line of code in a snippet is 60 characters to fit nicely within the homepage design, but the absolute maximum length is 64 characters to avoid wrapping to the next line.
 
 The recommended maximum number of lines in a snippet is 5 to avoid a scrollbar appearing, but this is subject to change.
+
+### Building
+
+To build the snippet JavaScript to embed into the website:
+
+```
+make
+```
+
+This outputs files into the `dist` directory.
