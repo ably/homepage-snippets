@@ -1,2 +1,3 @@
 let channel = ably.channels.get("driver:elon")
-channel.publish("position", data: [ "lat": 25.9634, "long": -97.2579, "bearing": "nw" ])
+let msg = [ "lat": lat, "long": long, "bearing": "nw" ]
+channel.publish("position", data: msg)
