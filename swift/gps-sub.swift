@@ -1,5 +1,6 @@
-let channel = ably.channels.get("driver:elon")
-channel.subscribe("position", callback: { [weak self] message in
-    guard let data = message.data as? [String : Any] else { return print("Unknown data format.") }
-    self?.showMarker(data)
-})
+channel.subscribe("position") { message in
+   map.showMarker(
+      position: (message.data["lat"], message.data["long"]),
+      direction: message.data["bearing"]
+   )
+}
