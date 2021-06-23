@@ -1,3 +1,6 @@
 channel := client.Channels.Get("room:tesla-fans")
-channel.Presence.Enter(context.Background(), UserName + " entered the channel")
-channel.Publish(context.Background(), "msg", map[string]string{"user": "elon", "message": "Hello fans"})
+channel.Presence.Enter(ctx, "Elon entered the channel")
+channel.Publish(ctx, "msg", Message{
+	User:    "elon",
+	Message: "Hello fans",
+})

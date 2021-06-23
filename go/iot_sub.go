@@ -1,4 +1,6 @@
-// Subscribe to messages sent on the channel with given eventName
-channel.Subscribe(context.Background(), "device:rocket:1", func(msg *ably.Message) {
-	rocket.ProcessInstruction(msg.Data)
-})
+handler := func(_ mqtt.Client, msg mqtt.Message) {
+	if msg.Topic() == "action" {
+		rocket.ProcessInstruction(msg.Payload())
+	}
+}
+mqttClient.Subscribe("device:rocket:1", mqtt.EXACTLY_ONCE, handler)
