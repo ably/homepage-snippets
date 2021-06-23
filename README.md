@@ -1,5 +1,7 @@
 ### Homepage Snippets
 
+[![.github/workflows/generate.yml](https://github.com/ably/homepage-snippets/actions/workflows/generate.yml/badge.svg)](https://github.com/ably/homepage-snippets/actions/workflows/generate.yml)
+
 This repository contains snippets for the ably.com homepage as required by [SDK-878](https://ably.atlassian.net/browse/SDK-878)
 
 ### Contributing
