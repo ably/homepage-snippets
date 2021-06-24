@@ -1,4 +1,3 @@
-
 def on_message(client, userdata, message):
     if message.topic == 'action':
         msg = message.payload.decode("utf-8")
