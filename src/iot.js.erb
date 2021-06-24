@@ -1,0 +1,111 @@
+const id = 'iot';
+const name = 'IoT';
+const screenshot = 'iot.png';
+const github = 'https://github.com/ably-labs/live-caption-demo';
+const text = 'See demo at Ably Labs';
+
+const publish = [
+  {
+    lang: 'javascript',
+    name: 'JavaScript',
+    code: `<%= File.read('javascript/iot-pub.js') %>`,
+  },
+  {
+    lang: 'android',
+    name: 'Android',
+    code: `<%= File.read('android/IotPub.java') %>`,
+  },
+  {
+    lang: 'obj-c',
+    name: 'Obj-C',
+    code: `<%= File.read('objc/iot-pub.m') %>`,
+  },
+  {
+    lang: 'swift',
+    name: 'Swift',
+    code: `<%= File.read('javascript/iot-pub.js') %>`,
+  },
+  {
+    lang: 'net',
+    name: '.NET',
+    code: `<%= File.read('javascript/iot-pub.js') %>`,
+  },
+  {
+    lang: 'ruby',
+    name: 'Ruby',
+    code: `<%= File.read('ruby/iot_pub.rb') %>`,
+  },
+  {
+    lang: 'go',
+    name: 'Go',
+    code: `<%= File.read('go/iot_pub.go') %>`,
+  },
+  {
+    lang: 'python',
+    name: 'Python',
+    code: `<%= File.read('javascript/iot-pub.js') %>`,
+  },
+  {
+    lang: 'php',
+    name: 'Laravel',
+    code: `<%= File.read('javascript/iot-pub.js') %>`,
+  },
+];
+
+const subscribe = [
+  {
+    lang: 'javascript',
+    name: 'JavaScript',
+    code: `<%= File.read('javascript/iot-sub.js') %>`,
+  },
+  {
+    lang: 'android',
+    name: 'Android',
+    code: `<%= File.read('android/IotSub.java') %>`,
+  },
+  {
+    lang: 'obj-c',
+    name: 'Obj-C',
+    code: `<%= File.read('objc/iot-sub.m') %>`,
+  },
+  {
+    lang: 'swift',
+    name: 'Swift',
+    code: `<%= File.read('javascript/iot-sub.js') %>`,
+  },
+  {
+    lang: 'net',
+    name: '.NET',
+    code: `<%= File.read('javascript/iot-sub.js') %>`,
+  },
+  {
+    lang: 'ruby',
+    name: 'Ruby',
+    code: `<%= File.read('ruby/iot_sub.rb') %>`,
+  },
+  {
+    lang: 'go',
+    name: 'Go',
+    code: `<%= File.read('go/iot_sub.go') %>`,
+  },
+  {
+    lang: 'python',
+    name: 'Python',
+    code: `<%= File.read('javascript/iot-sub.js') %>`,
+  },
+  {
+    lang: 'php',
+    name: 'Laravel',
+    code: `<%= File.read('javascript/iot-sub.js') %>`,
+  },
+];
+
+const component = {
+  id,
+  name,
+  text,
+  github,
+  screenshot,
+  data: { publish, subscribe },
+};
+export default component;

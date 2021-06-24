@@ -1,0 +1,101 @@
+const id = 'multiuser';
+const name = 'Multi-user';
+const screenshot = 'multi-user.png';
+const github = 'https://github.com/ably-labs/whiteboard';
+const text = 'See demo at Ably Labs';
+
+const publish = [
+  {
+    lang: 'javascript',
+    name: 'JavaScript',
+    code: `<%= File.read('javascript/multi-user-pub.js') %>`,
+  },
+  {
+    lang: 'android',
+    name: 'Android',
+    code: `<%= File.read('android/MultiUserPub.java') %>`,
+  },
+  {
+    lang: 'obj-c',
+    name: 'Obj-C',
+    code: `<%= File.read('objc/multi-user-pub.m') %>`,
+  },
+  {
+    lang: 'swift',
+    name: 'Swift',
+    code: `<%= File.read('javascript/multi-user-pub.js') %>`,
+  },
+  {
+    lang: 'net',
+    name: '.NET',
+    code: `<%= File.read('javascript/multi-user-pub.js') %>`,
+  },
+  {
+    lang: 'ruby',
+    name: 'Ruby',
+    code: `<%= File.read('ruby/multi_user_pub.rb') %>`,
+  },
+  {
+    lang: 'go',
+    name: 'Go',
+    code: `<%= File.read('go/multi_user_pub.go') %>`,
+  },
+  {
+    lang: 'python',
+    name: 'Python',
+    code: `<%= File.read('javascript/multi-user-pub.js') %>`,
+  },
+  {
+    lang: 'php',
+    name: 'Laravel',
+    code: `<%= File.read('javascript/multi-user-pub.js') %>`,
+  },
+];
+
+const subscribe = [
+  {
+    lang: 'javascript',
+    name: 'JavaScript',
+    code: `<%= File.read('javascript/multi-user-sub.js') %>`,
+  },
+  {
+    lang: 'android',
+    name: 'Android',
+    code: `<%= File.read('android/MultiUserSub.kt') %>`,
+  },
+  {
+    lang: 'java',
+    name: 'Java',
+    code: `<%= File.read('java/MultiUserSub.java') %>`,
+  },
+  {
+    lang: 'obj-c',
+    name: 'Obj-C',
+    code: `<%= File.read('objc/multi-user-sub.m') %>`,
+  },
+  {
+    lang: 'swift',
+    name: 'Swift',
+    code: `<%= File.read('javascript/multi-user-sub.js') %>`,
+  },
+  {
+    lang: 'net',
+    name: '.NET',
+    code: `<%= File.read('javascript/multi-user-sub.js') %>`,
+  },
+  {
+    lang: 'flutter',
+    name: 'Flutter',
+    code: `<%= File.read('flutter/multi_user_sub.dart') %>`,
+  },
+];
+
+const component = {
+  id,
+  name,
+  text,
+  github,
+  screenshot,
+  data: { publish, subscribe },
+};
+export default component;

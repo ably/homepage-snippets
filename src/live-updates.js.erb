@@ -1,0 +1,101 @@
+const id = 'liveupdates';
+const name = 'Live Updates';
+const screenshot = 'live-updates.png';
+const github = 'https://github.com/ably-labs/live-cryptocurrency-streaming-flutter';
+const text = 'See demo at Ably Labs';
+
+const publish = [
+  {
+    lang: 'javascript',
+    name: 'JavaScript',
+    code: `<%= File.read('javascript/live-updates-pub.js') %>`,
+  },
+  {
+    lang: 'android',
+    name: 'Android',
+    code: `<%= File.read('android/LiveUpdatesPub.java') %>`,
+  },
+  {
+    lang: 'obj-c',
+    name: 'Obj-C',
+    code: `<%= File.read('objc/live-updates-pub.m') %>`,
+  },
+  {
+    lang: 'swift',
+    name: 'Swift',
+    code: `<%= File.read('javascript/live-updates-pub.js') %>`,
+  },
+  {
+    lang: 'net',
+    name: '.NET',
+    code: `<%= File.read('javascript/live-updates-pub.js') %>`,
+  },
+  {
+    lang: 'ruby',
+    name: 'Ruby',
+    code: `<%= File.read('ruby/live_updates_pub.rb') %>`,
+  },
+  {
+    lang: 'go',
+    name: 'Go',
+    code: `<%= File.read('go/live_updates_pub.go') %>`,
+  },
+  {
+    lang: 'python',
+    name: 'Python',
+    code: `<%= File.read('javascript/live-updates-pub.js') %>`,
+  },
+  {
+    lang: 'php',
+    name: 'Laravel',
+    code: `<%= File.read('javascript/live-updates-pub.js') %>`,
+  },
+];
+
+const subscribe = [
+  {
+    lang: 'javascript',
+    name: 'JavaScript',
+    code: `<%= File.read('javascript/live-updates-sub.js') %>`,
+  },
+  {
+    lang: 'android',
+    name: 'Android',
+    code: `<%= File.read('android/LiveUpdatesSub.kt') %>`,
+  },
+  {
+    lang: 'java',
+    name: 'Java',
+    code: `<%= File.read('java/LiveUpdatesSub.java') %>`,
+  },
+  {
+    lang: 'obj-c',
+    name: 'Obj-C',
+    code: `<%= File.read('objc/live-updates-sub.m') %>`,
+  },
+  {
+    lang: 'swift',
+    name: 'Swift',
+    code: `<%= File.read('javascript/live-updates-sub.js') %>`,
+  },
+  {
+    lang: 'net',
+    name: '.NET',
+    code: `<%= File.read('javascript/live-updates-sub.js') %>`,
+  },
+  {
+    lang: 'flutter',
+    name: 'Flutter',
+    code: `<%= File.read('flutter/live_updates_sub.dart') %>`,
+  },
+];
+
+const component = {
+  id,
+  name,
+  text,
+  github,
+  screenshot,
+  data: { publish, subscribe },
+};
+export default component;

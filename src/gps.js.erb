@@ -1,0 +1,96 @@
+const id = 'gps';
+const name = 'GPS';
+const screenshot = 'gps.png';
+const github = 'https://github.com/ably-labs/cttransit-ably-mapbox-demo';
+const text = 'See demo at Ably Labs';
+
+const publish = [
+  {
+    lang: 'javascript',
+    name: 'JavaScript',
+    code: `<%= File.read('javascript/gps-pub.js') %>`,
+  },
+  {
+    lang: 'android',
+    name: 'Android',
+    code: `<%= File.read('android/GpsPub.java') %>`,
+  },
+  {
+    lang: 'obj-c',
+    name: 'Obj-C',
+    code: `<%= File.read('objc/gps-pub.m') %>`,
+  },
+  {
+    lang: 'swift',
+    name: 'Swift',
+    code: `<%= File.read('javascript/gps-pub.js') %>`,
+  },
+  {
+    lang: 'net',
+    name: '.NET',
+    code: `<%= File.read('javascript/gps-pub.js') %>`,
+  },
+  {
+    lang: 'ruby',
+    name: 'Ruby',
+    code: `<%= File.read('ruby/gps_pub.rb') %>`,
+  },
+  {
+    lang: 'go',
+    name: 'Go',
+    code: `<%= File.read('go/gps_pub.go') %>`,
+  },
+  {
+    lang: 'python',
+    name: 'Python',
+    code: `<%= File.read('javascript/gps-pub.js') %>`,
+  },
+  {
+    lang: 'php',
+    name: 'Laravel',
+    code: `<%= File.read('javascript/gps-pub.js') %>`,
+  },
+];
+
+const subscribe = [
+  {
+    lang: 'javascript',
+    name: 'JavaScript',
+    code: `<%= File.read('javascript/gps-sub.js') %>`,
+  },
+  {
+    lang: 'android',
+    name: 'Android',
+    code: `<%= File.read('android/GpsSub.java') %>`,
+  },
+  {
+    lang: 'obj-c',
+    name: 'Obj-C',
+    code: `<%= File.read('objc/gps-sub.m') %>`,
+  },
+  {
+    lang: 'swift',
+    name: 'Swift',
+    code: `<%= File.read('javascript/gps-sub.js') %>`,
+  },
+  {
+    lang: 'net',
+    name: '.NET',
+    code: `<%= File.read('javascript/gps-sub.js') %>`,
+  },
+  {
+    lang: 'flutter',
+    name: 'Flutter',
+    code: `<%= File.read('flutter/gps_sub.dart') %>`,
+  },
+];
+
+const component = {
+  id,
+  name,
+  text,
+  github,
+  screenshot,
+  data: { publish, subscribe },
+};
+export default component;
