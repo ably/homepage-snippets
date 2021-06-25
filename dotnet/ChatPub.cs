@@ -1,5 +1,5 @@
 IRealtimeChannel channel = ably.Channels.Get(
-    "room:tesla-fans");
+    "room:yoga-wednesdays");
 
 channel.Publish(
     "msg",
