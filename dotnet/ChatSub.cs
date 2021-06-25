@@ -1,5 +1,5 @@
 channel.Presence.Subscribe(
-    PresenceAction.Enter, 
+    PresenceAction.Enter,
     message => UI.ShowMemberEntered(message));
 
 channel.Subscribe(message => {
