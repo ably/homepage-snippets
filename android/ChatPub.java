@@ -1,5 +1,5 @@
 Channel channel = ably.channels.get("room:yoga-wednesdays");
-channel.presence.enter("Elon entered the channel", null);
+channel.presence.enter("Alex entered the chat", null);
 channel.publish("msg", JsonUtils.object()
     .add("user", "alex")
     .add("message", "Is yoga on this week?")
