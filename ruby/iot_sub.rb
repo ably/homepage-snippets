@@ -1,4 +1,4 @@
-mqtt.subscribe('device:rocket:1')
+mqtt.subscribe('device:thermostat:bedroom')
 mqtt.get do |topic, payload|
-  rocket.process_instruction(payload) if topic == 'action'
+  thermostat.process_instruction(payload) if topic == 'action'
 end

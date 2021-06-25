@@ -1,5 +1,5 @@
-mqttClient.subscribe("device:rocket:1", (topic, msg) -> {
+mqttClient.subscribe("device:thermostat:bedroom", (topic, msg) -> {
     if(topic == "action") {
-        rocket.processInstruction(msg.getPayload());
+        thermostat.processInstruction(msg.getPayload());
     }
 });

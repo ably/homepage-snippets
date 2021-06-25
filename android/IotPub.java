@@ -1,4 +1,5 @@
-Channel channel = ably.channels.get("device:rocket:1");
+Channel channel = ably.channels.get("device:thermostat:bedroom");
 channel.publish("action", JsonUtils.object()
-    .add("action", "enable-thrusters")
+    .add("type", "temperature")
+    .add("value", 70)
     .toJson());

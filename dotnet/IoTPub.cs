@@ -1,4 +1,4 @@
 IRealtimeChannel channel = ably.Channels.Get(
-    "device:rocket:1");
-
-channel.Publish("action", new { Task = "enable-thrusters" });
+    "device:thermostat:bedroom");
+channel.Publish("action",
+    new Action { Type = "temperature", Value = 70 });

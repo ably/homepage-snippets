@@ -1,6 +1,6 @@
-mqttClient.subscribe("device:rocket:1")
+mqttClient.subscribe("device:thermostat:bedroom")
 mqttClient.on('message') { topic, message in
    if topic == "action" {
-      rocket.processInstruction(message)
+      thermostat.processInstruction(message)
    }
 }
