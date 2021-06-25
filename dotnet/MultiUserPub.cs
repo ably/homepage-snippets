@@ -3,4 +3,4 @@ IRealtimeChannel channel = ably.Channels.Get(
 
 channel.Publish("update", new Update {
     Pos = charAt,
-    Insert = "Send Grimes first" });
+    Insert = "What about fuel?" });
