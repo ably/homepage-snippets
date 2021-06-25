@@ -3,4 +3,4 @@ IRealtimeChannel channel = ably.Channels.Get(
 
 channel.Publish(
     "msg",
-    new Message { user = "alex", message = "Hello fans" });
+    new Message { user = "alex", message = "Is yoga on this week?" });
