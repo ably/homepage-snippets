@@ -1,4 +1,4 @@
-channel := client.Channels.Get("driver:elon")
+channel := client.Channels.Get("driver:aardvark")
 channel.Publish(ctx, "position", Position{
 	Lat:     lat,
 	Long:    long,

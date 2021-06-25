@@ -1,2 +1,2 @@
-ARTRealtimeChannel *channel = [ably.channels get:@"device:rocket:1"];
-[channel publish:@"action" data:@{ @"task": @"enable-thrusters" }];
+ARTRealtimeChannel *channel = [ably.channels get:@"device:thermostat:bedroom"];
+[channel publish:@"action" data:@{ @"type": @"temperature", @"value": @70 }];

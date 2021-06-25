@@ -1,2 +1,2 @@
-$channel = $ably->channel('room:tesla-fans');
-$channel->publish('msg', new Object('user', 'elon', 'message', 'Hello fans'));
+$channel = $ably->channel('room:yoga-wednesdays');
+$channel->publish('msg', new Object('user', 'alex', 'message', 'Is yoga on this week?'));

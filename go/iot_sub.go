@@ -1,6 +1,6 @@
 handler := func(_ mqtt.Client, msg mqtt.Message) {
 	if msg.Topic() == "action" {
-		rocket.ProcessInstruction(msg.Payload())
+		thermostat.ProcessInstruction(msg.Payload())
 	}
 }
-mqttClient.Subscribe("device:rocket:1", mqtt.EXACTLY_ONCE, handler)
+mqttClient.Subscribe("device:thermostat:bedroom", mqtt.EXACTLY_ONCE, handler)

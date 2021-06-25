@@ -1,6 +1,6 @@
-mqttClient.Subscribe("device:rocket:1");
+mqttClient.Subscribe("device:thermostat:bedroom");
 mqttClient.On("message", (topic, message) => {
   if (topic == "action") {
-    rocket.ProcessInstruction(JSON.Parse(message));
+    thermostat.ProcessInstruction(JSON.Parse(message));
   }
 });

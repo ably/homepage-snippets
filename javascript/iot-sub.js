@@ -1,6 +1,6 @@
-mqttClient.subscribe('device:rocket:1');
+mqttClient.subscribe('device:thermostat:bedroom');
 mqttClient.on('message', (topic, message) => {
   if (topic === 'action') {
-    rocket.processInstruction(JSON.parse(message));
+    thermostat.processInstruction(JSON.parse(message));
   }
 });

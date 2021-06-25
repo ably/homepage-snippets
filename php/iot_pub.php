@@ -1,2 +1,2 @@
-$channel = $ably->channel('device:rocket:1');
-$channel->publish('action', new Object('task', 'enable-thrusters'));
+$channel = $ably->channel('device:thermostat:bedroom');
+$channel->publish('action', new Object('type', 'temperature', 'value', 70));
