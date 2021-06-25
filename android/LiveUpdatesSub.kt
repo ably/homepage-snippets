@@ -1,2 +1,2 @@
-val channel = ably.channels.get("dogecoin:usd")
+val channel = ably.channels.get("newcoin:usd")
 channel.subscribe("rate") { msg -> chart.appendMetric(msg.data) }

@@ -1,2 +1,2 @@
-const channel = ably.channels.get('dogecoin:usd');
+const channel = ably.channels.get('newcoin:usd');
 channel.publish('rate', { price: price, time: pricedAt });
