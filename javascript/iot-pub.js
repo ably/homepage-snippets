@@ -1,2 +1,4 @@
-const channel = ably.channels.get('device:thermostat:bedroom');
-channel.publish('action', { type: 'temperature', value: 70 });
+mqttClient.on('connect', function() {
+  const measurement = { type: 'temperature', value: 70 }
+  mqttClient.publish('device:thermostat:bedroom', measurement);
+});
