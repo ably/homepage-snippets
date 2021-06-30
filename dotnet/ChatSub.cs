@@ -1,6 +1,6 @@
 channel.Presence.Subscribe(
-    PresenceAction.Enter,
-    message => UI.ShowMemberEntered(message));
+  PresenceAction.Enter,
+  message => UI.ShowMemberEntered(message));
 
 channel.Subscribe(message => {
-    UI.AppendToConversation((Message) message.Data); });
+  UI.AppendToConversation((Message) message.Data); });

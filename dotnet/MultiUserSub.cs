@@ -1,3 +1,3 @@
 channel.Subscribe("update", msg => {
-    document.ApplyUpdate((Update) msg.Data);
+  document.ApplyUpdate((Update) msg.Data);
 });

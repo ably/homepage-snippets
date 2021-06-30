@@ -1,4 +1,4 @@
 IRealtimeChannel channel = ably.Channels.Get(
-    "device:thermostat:bedroom");
+  "device:thermostat:bedroom");
 channel.Publish("action",
-    new Action { Type = "temperature", Value = 70 });
+  new Action { Type = "temperature", Value = 70 });
